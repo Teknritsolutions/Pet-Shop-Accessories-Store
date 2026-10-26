@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Template Documentation | Morrow &amp; Paw</title>
+    <meta
+      name="description"
+      content="Setup, customization, integrations, and documentation for the Morrow and Paw HTML template."
+    />
+    <link rel="canonical" href="https://example.com/documentation/" />
+    <meta property="og:title" content="Our story and point of view | Morrow & Paw" />
+    <meta
+      property="og:description"
+      content="Meet Morrow & Paw, a thoughtful neighborhood pet shop built around considered quality, gentle care, and everyday joy."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://example.com/documentation/" />
+    <meta property="og:image" content="https://example.com/assets/images/ui/social-cover.png" />
+    <meta name="theme-color" content="#172d3c" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="alternate icon" href="../favicon.ico" />
+    <script>
+      try {
+        var t = localStorage.getItem("mp-theme");
+        document.documentElement.dataset.theme =
+          t || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.dir = localStorage.getItem("mp-direction") || "ltr";
+      } catch (e) {}
+    </script>
+    <link rel="stylesheet" href="../assets/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/vendor/bootstrap-icons.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/dark-mode.css" />
+    <link rel="stylesheet" href="../assets/css/premium.css" />
+    <link rel="stylesheet" href="../assets/css/rtl.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Our story and point of view",
+        "description": "Meet Morrow & Paw, a thoughtful neighborhood pet shop built around considered quality, gentle care, and everyday joy.",
+        "url": "https://example.com/documentation/"
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://example.com/" },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Our story and point of view",
+            "item": "https://example.com/documentation/"
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body class="">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <!-- Header -->
+    <div class="announcement">
+      Thoughtfully chosen. Happily loved. &nbsp; | &nbsp; Discover a better everyday for your pet.
+    </div>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="../index.html" aria-label="Morrow and Paw home">
+          <svg class="brand-mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+            <rect class="crest-field" x="3" y="3" width="42" height="42" rx="14" />
+            <rect class="crest-line" x="6.5" y="6.5" width="35" height="35" rx="11" />
+            <path
+              class="crest-monogram"
+              d="M13 32V17L19 24L25 17V32M28 32V17H31.5C38 17 38 25 31.5 25H28"
+            />
+            <path class="crest-detail" d="M20 12H28M21 37H27" />
+          </svg>
+          <span class="brand-name">
+            morrow & paw
+            <small>For their everyday joy</small>
+          </span>
+        </a>
+        <nav id="main-navigation" class="main-nav" aria-label="Main navigation">
+          <div class="mobile-menu-heading">
+            <a class="brand" href="../index.html" aria-label="Morrow and Paw home">
+              <svg class="brand-mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                <rect class="crest-field" x="3" y="3" width="42" height="42" rx="14" />
+                <rect class="crest-line" x="6.5" y="6.5" width="35" height="35" rx="11" />
+                <path
+                  class="crest-monogram"
+                  d="M13 32V17L19 24L25 17V32M28 32V17H31.5C38 17 38 25 31.5 25H28"
+                />
+                <path class="crest-detail" d="M20 12H28M21 37H27" />
+              </svg>
+              <span class="brand-name">
+                morrow & paw
+                <small>For their everyday joy</small>
+              </span>
+            </a>
+            <button type="button" class="icon-button" data-menu-close aria-label="Close navigation">
+              <i class="bi bi-x-lg" aria-hidden="true"></i>
+            </button>
+          </div>
+          <div class="nav-dropdown">
+            <button class="nav-dropdown-toggle" aria-expanded="false" aria-controls="home-submenu">
+              <span class="mobile-link-icon">
+                <i class="bi bi-house-door" aria-hidden="true"></i>
+              </span>
+              Home
+              <i class="bi bi-chevron-down" aria-hidden="true"></i>
+            </button>
+            <div id="home-submenu" class="dropdown-menu-custom" hidden>
+              <a href="../index.html">Home Page 1</a>
+              <a href="../pages/home-2.html">Home Page 2</a>
+            </div>
+          </div>
+          <a href="../pages/about.html">
+            <span class="mobile-link-icon">
+              <i class="bi bi-info-circle" aria-hidden="true"></i>
+            </span>
+            About
+          </a>
+          <a href="../pages/shop.html">
+            <span class="mobile-link-icon"><i class="bi bi-basket" aria-hidden="true"></i></span>
+            Shop
+          </a>
+          <a href="../pages/brands.html">
+            <span class="mobile-link-icon"><i class="bi bi-box-seam" aria-hidden="true"></i></span>
+            Featured Brands
+          </a>
+          <a href="../pages/grooming.html">
+            <span class="mobile-link-icon"><i class="bi bi-scissors" aria-hidden="true"></i></span>
+            Grooming
+          </a>
+          <a href="../pages/blog.html">
+            <span class="mobile-link-icon">
+              <i class="bi bi-journal-text" aria-hidden="true"></i>
+            </span>
+            Pet Care Tips
+          </a>
+          <a href="../pages/contact.html">
+            <span class="mobile-link-icon"><i class="bi bi-envelope" aria-hidden="true"></i></span>
+            Contact
+          </a>
+          <div class="mobile-nav-utilities">
+            <a class="btn btn-primary" href="../pages/shop.html">
+              Shop now
+              <i class="bi bi-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </nav>
+        <button
+          type="button"
+          class="mobile-menu-backdrop"
+          data-menu-close
+          aria-label="Close navigation"
+          tabindex="-1"
+          hidden
+        ></button>
+        <div class="header-tools">
+          <button
+            class="icon-button"
+            id="cart-toggle"
+            aria-label="Open shopping cart"
+            aria-expanded="false"
+            aria-controls="cart-panel"
+          >
+            <i class="bi bi-cart3" aria-hidden="true"></i>
+            <span class="cart-count" id="cart-count" aria-hidden="true">0</span>
+          </button>
+          <button class="icon-button" id="theme-toggle" aria-label="Switch color theme">
+            <i class="bi bi-moon" aria-hidden="true"></i>
+          </button>
+          <button
+            class="icon-button direction-toggle"
+            id="direction-toggle"
+            aria-label="Enable right-to-left layout"
+          >
+            RTL
+          </button>
+          <a class="btn btn-primary header-shop-button" href="../pages/shop.html">
+            Shop now
+            <i class="bi bi-arrow-right" aria-hidden="true"></i>
+          </a>
+          <button
+            class="icon-button menu-toggle"
+            id="menu-toggle"
+            aria-expanded="false"
+            aria-controls="main-navigation"
+            aria-label="Open navigation"
+          >
+            <i class="bi bi-list" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+      <div class="cart-panel" id="cart-panel" role="region" aria-labelledby="cart-title" hidden>
+        <span class="cart-empty-icon"><i class="bi bi-bag-heart" aria-hidden="true"></i></span>
+        <h2 id="cart-title">Your shopping cart</h2>
+        <p id="cart-summary" aria-live="polite">
+          Your cart is empty. Discover a few thoughtful favorites for your companion.
+        </p>
+        <ul class="cart-items" id="cart-items"></ul>
+        <a class="btn btn-primary" href="../pages/shop.html">
+          Explore the shop
+          <i class="bi bi-arrow-right" aria-hidden="true"></i>
+        </a>
+        <p class="cart-note">Catalog preview · Purchases are not processed.</p>
+      </div>
+    </header>
+    <main id="main-content">
+      <section class="page-hero">
+        <div class="container">
+          <span class="eyebrow">Template documentation · Version 1.0</span>
+          <h1>Make it your own.</h1>
+          <p class="lead">
+            Setup, customization, integrations, and the small details that make this template easy
+            to work with.
+          </p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container prose">
+          <h2>Start here</h2>
+          <p>
+            Open
+            <a href="../index.html">index.html</a>
+            directly, or run
+            <code>npm start</code>
+            from the project folder and visit
+            <code>http://127.0.0.1:4173</code>
+            . The public website has no build-time or remote runtime dependency. Bootstrap, icons,
+            fonts, scripts, and photographs are stored locally.
+          </p>
+          <p>
+            For development, run
+            <code>npm install</code>
+            once.
+            <code>npm run build</code>
+            regenerates the HTML from
+            <code>scripts/build.cjs</code>
+            . The shipped HTML is editable directly; if using the generator, make content changes
+            there to avoid overwriting edits.
+          </p>
+          <h2>The pages</h2>
+          <p>
+            Two ten-section homepages, shop, product details, brands, grooming, journal, about,
+            contact, 404, and coming soon. Care tips expand directly inside journal cards. No
+            dashboard is included.
+          </p>
+          <h2>Colors, spacing, and type</h2>
+          <p>
+            Edit the CSS variables at the top of
+            <code>assets/css/style.css</code>
+            . The shared container is 1240px wide with equal responsive margins. An 8px spacing
+            rhythm, reusable headings, buttons, and grid classes keep pages consistent.
+          </p>
+          <p>
+            Dark-theme overrides live in
+            <code>assets/css/dark-mode.css</code>
+            . Theme preference follows the system until manually changed and persists in local
+            storage. The RTL button persists layout direction; logical CSS handles most alignment,
+            with overrides in
+            <code>assets/css/rtl.css</code>
+            .
+          </p>
+          <p>
+            DM Sans is hosted locally under the SIL Open Font License in
+            <code>assets/fonts/OFL.txt</code>
+            . Editorial headings use the system Georgia serif font.
+          </p>
+          <h2>Catalog and images</h2>
+          <p>
+            The refined presentation layer is in
+            <code>assets/css/premium.css</code>
+            : 17px paragraphs, 16px action labels, framed category and product cards, inset journal
+            panels, circular testimonial portraits, and consistent hover and focus states.
+            <code>scripts/premium-components.cjs</code>
+            supplies the original crest and different closing compositions for each page. Portrait
+            origins are recorded in
+            <a href="testimonial-assets.json">testimonial-assets.json</a>
+            . Run
+            <code>node tests/readability.cjs</code>
+            with the preview server running to check text sizes.
+          </p>
+          <p>
+            Illustrative products are defined in
+            <code>scripts/build.cjs</code>
+            . Shop controls filter visible items by pet, type, brand, price, and name, with sorting
+            and reset. Restwell opens the detailed product page. The other product cards have View
+            buttons that open the shop; their image and title links open a prefilled special-order
+            enquiry. Original brand emblems are defined in
+            <code>scripts/brand-emblems.cjs</code>
+            .
+          </p>
+          <p>
+            All content images are WebP. Each photograph has one independent use across the site.
+            The product gallery changes the main display when a thumbnail is selected; this is one
+            gallery, rather than a second independent use.
+          </p>
+          <p>
+            <a href="image-usage.json">Image usage map</a>
+            lists page references.
+            <a href="image-sources.txt">Stock source URLs</a>
+            and
+            <a href="generated-assets.json">generated asset manifest</a>
+            identify origins. Original AI photography and product shots were made with the built-in
+            image-generation tool; prompts are summarized in
+            <a href="image-prompts.md">image-prompts.md</a>
+            .
+          </p>
+          <h2>Connect the forms</h2>
+          <p>
+            The template validates inputs and shows clearly labeled demo success messages. It does
+            not transmit or persist personal information, process orders, or book appointments.
+          </p>
+          <ol>
+            <li>Choose your form service and configure its endpoint in the relevant form.</li>
+            <li>
+              Update the submit handler in
+              <code>assets/js/main.js</code>
+              to send data only after validation, or use a standard POST form supported by the
+              provider.
+            </li>
+            <li>
+              Add loading, failure, and genuine delivery success states. Enable appropriate
+              server-side validation and abuse protection.
+            </li>
+            <li>
+              Replace demo notices and policy placeholders with accurate business information.
+            </li>
+          </ol>
+          <p>
+            Formspree or Netlify Forms can handle enquiries; Mailchimp or ConvertKit can handle
+            newsletters. Provider setup is required. The optional image field checks type and a 5 MB
+            limit; no image is uploaded by the demo.
+          </p>
+          <h2>Before publishing</h2>
+          <ul>
+            <li>
+              Replace fictional brands, store address, phone, email, prices, specifications, and
+              customer stories.
+            </li>
+            <li>
+              Replace
+              <code>https://example.com</code>
+              in canonical tags, Open Graph metadata, JSON-LD, sitemap, and robots.txt.
+            </li>
+            <li>
+              Configure genuine social profile links, your map embed, privacy policy, terms,
+              returns, and service conditions.
+            </li>
+            <li>
+              Update the coming-soon launch timestamp in its
+              <code>data-countdown</code>
+              attribute.
+            </li>
+            <li>
+              Configure your host’s custom 404 document to
+              <code>pages/404.html</code>
+              . The development server demonstrates a 404 response.
+            </li>
+            <li>
+              Verify the current license requirements of stock photography and vendor dependencies
+              for your distribution. For marketplace resale, replace stock photos with assets you
+              have confirmed redistribution rights for.
+            </li>
+          </ul>
+          <h2>Testing and review</h2>
+          <p>
+            Run the local server, then
+            <code>npm test</code>
+            . The audit checks all public pages at 320, 360, 375, 390, 414, 420, 480, 640, 768, 820,
+            1024, 1280, 1440, and 1920px in light and dark themes. RTL is checked at 320, 820, and
+            1440px. It also checks local links, H1 counts, metadata, broken images, repeated
+            content-image references, browser errors, and meaningful interaction flows.
+          </p>
+          <p>
+            The test uses Microsoft Edge on Windows by default. Set
+            <code>BROWSER_PATH</code>
+            to a Chromium-compatible browser executable for another environment. Reports and page
+            screenshots are saved under
+            <code>tests/</code>
+            .
+          </p>
+          <p>
+            Layout audits are not a guarantee of WCAG compliance or a PageSpeed score. Recheck your
+            final content, integrations, and hosting with accessibility and performance tools.
+          </p>
+          <h2>Dependencies and credits</h2>
+          <p>
+            Bootstrap 5.3.8 and Bootstrap Icons 1.13.1 (MIT), DM Sans (SIL OFL), original Morrow &
+            Paw branding, original AI-generated visuals, and local photographs downloaded from
+            Unsplash. Vendor licenses are included in
+            <code>assets/vendor/</code>
+            .
+          </p>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a class="brand" href="../index.html" aria-label="Morrow and Paw home">
+              <svg class="brand-mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                <rect class="crest-field" x="3" y="3" width="42" height="42" rx="14" />
+                <rect class="crest-line" x="6.5" y="6.5" width="35" height="35" rx="11" />
+                <path
+                  class="crest-monogram"
+                  d="M13 32V17L19 24L25 17V32M28 32V17H31.5C38 17 38 25 31.5 25H28"
+                />
+                <path class="crest-detail" d="M20 12H28M21 37H27" />
+              </svg>
+              <span class="brand-name">
+                morrow & paw
+                <small>For their everyday joy</small>
+              </span>
+            </a>
+            <p>
+              Considered essentials, good advice, and a little more joy. For the companions who make
+              a house a home.
+            </p>
+            <div class="social-links">
+              <a
+                href="https://www.instagram.com/"
+                aria-label="Instagram"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="bi bi-instagram" aria-hidden="true"></i>
+              </a>
+              <a
+                href="https://www.facebook.com/"
+                aria-label="Facebook"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="bi bi-facebook" aria-hidden="true"></i>
+              </a>
+              <a
+                href="https://www.pinterest.com/"
+                aria-label="Pinterest"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="bi bi-pinterest" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h2>Shop by pet</h2>
+            <ul>
+              <li><a href="../pages/shop.html?pet=Dogs">Dogs</a></li>
+              <li><a href="../pages/shop.html?pet=Cats">Cats</a></li>
+              <li><a href="../pages/shop.html?pet=Birds">Birds</a></li>
+              <li><a href="../pages/shop.html?pet=Fish">Fish</a></li>
+              <li><a href="../pages/shop.html?pet=Small%20Animals">Small Animals</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Discover</h2>
+            <ul>
+              <li><a href="../pages/brands.html">Featured brands</a></li>
+              <li><a href="../pages/grooming.html">Grooming</a></li>
+              <li><a href="../pages/blog.html">Pet care tips</a></li>
+              <li><a href="../pages/about.html">Our story</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Here to help</h2>
+            <ul>
+              <li><a href="../pages/contact.html">Contact us</a></li>
+              <li><a href="../pages/contact.html#special-orders">Special orders</a></li>
+              <li><a href="../pages/contact.html#faq">FAQs</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Come say hello</h2>
+            <address>
+              701 SW 6th Avenue, Portland, OR 97204
+              <br />
+              Mon–Sat: 9am–6pm · Sun: 10am–4pm
+              <br />
+              <a href="mailto:hello@example.com">hello@example.com</a>
+              <br />
+              <a href="tel:+15035550148">(503) 555-0148</a>
+            </address>
+            <p class="demo-note">Illustrative store details.</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 Morrow & Paw. Made for the love of pets.</span>
+          <div>
+            <button class="nav-dropdown-toggle" type="button" data-policy="privacy">Privacy</button>
+            <button class="nav-dropdown-toggle" type="button" data-policy="terms">Terms</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div id="toast" class="toast" role="status" hidden></div>
+    <div
+      class="dialog"
+      id="policy-dialog"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="policy-title"
+      hidden
+    >
+      <div class="dialog-box">
+        <button class="icon-button dialog-close" aria-label="Close policy">
+          <i class="bi bi-x-lg" aria-hidden="true"></i>
+        </button>
+        <h2 id="policy-title"></h2>
+        <div id="policy-body"></div>
+      </div>
+    </div>
+    <script src="../assets/vendor/bootstrap.bundle.min.js" defer></script>
+    <script src="../assets/js/main.js" defer></script>
+  </body>
+</html>

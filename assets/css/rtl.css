@@ -1,0 +1,25 @@
+/* Layout uses logical spacing throughout. Toggle with the header RTL control. */
+html[dir="rtl"] .hero-image > img {
+  border-radius: 8px 140px 8px 8px;
+}
+html[dir="rtl"] .hero-2 .hero-image > img {
+  border-radius: 8px;
+}
+html[dir="rtl"] .bi-arrow-right,
+html[dir="rtl"] .bi-chevron-right {
+  display: inline-block;
+  transform: scaleX(-1);
+}
+html[dir="rtl"] .banner-copy {
+  background: linear-gradient(270deg, #172d3cbb, transparent);
+}
+html[dir="rtl"] input[type="email"],
+html[dir="rtl"] input[type="tel"] {
+  direction: ltr;
+  text-align: start;
+}
+@media (max-width: 900px) {
+  html[dir="rtl"] .hero-image > img {
+    border-radius: 8px 80px 8px 8px;
+  }
+}

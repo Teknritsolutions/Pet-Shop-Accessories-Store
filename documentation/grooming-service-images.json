@@ -1,0 +1,50 @@
+[
+  {
+    "name": "bath",
+    "file": "assets/images/grooming/services/bath.webp",
+    "original": "C:\\Users\\Dell\\.codex\\generated_images\\01a116ce-f9ab-7160-a4ec-62db9b73e854\\exec-8304ffa8-d13a-4181-bbaa-450aebf37bd5.png",
+    "scene": "A small calm dog standing in a clean shallow grooming bath, groomer gently rinsing its coat with a handheld shower",
+    "tool": "built-in image_gen",
+    "composition": "Square frame, full dog and care activity, generous margins, quiet upper text area"
+  },
+  {
+    "name": "full",
+    "file": "assets/images/grooming/services/full.webp",
+    "original": "C:\\Users\\Dell\\.codex\\generated_images\\01a116ce-f9ab-7160-a4ec-62db9b73e854\\exec-78f2c992-58b3-4ce8-9e7f-73cd8f8a6006.png",
+    "scene": "A calm small fluffy dog standing on a grooming table, groomer carefully trimming its coat with grooming scissors",
+    "tool": "built-in image_gen",
+    "composition": "Square frame, full dog and care activity, generous margins, quiet upper text area"
+  },
+  {
+    "name": "puppy",
+    "file": "assets/images/grooming/services/puppy.webp",
+    "original": "C:\\Users\\Dell\\.codex\\generated_images\\01a116ce-f9ab-7160-a4ec-62db9b73e854\\exec-6dc4c11b-bff1-4b69-bc7d-14edd27633e8.png",
+    "scene": "A relaxed young puppy sitting on a grooming table receiving a gentle welcoming stroke from a groomer",
+    "tool": "built-in image_gen",
+    "composition": "Square frame, full dog and care activity, generous margins, quiet upper text area"
+  },
+  {
+    "name": "nails",
+    "file": "assets/images/grooming/services/nails.webp",
+    "original": "C:\\Users\\Dell\\.codex\\generated_images\\01a116ce-f9ab-7160-a4ec-62db9b73e854\\exec-c89f6a62-a50e-4c7e-b68a-39e648f5ab21.png",
+    "scene": "A calm small dog on a grooming table, groomer supporting one front paw and carefully trimming a nail with pet nail clippers",
+    "tool": "built-in image_gen",
+    "composition": "Square frame, full dog and care activity, generous margins, quiet upper text area"
+  },
+  {
+    "name": "ears",
+    "file": "assets/images/grooming/services/ears.webp",
+    "original": "C:\\Users\\Dell\\.codex\\generated_images\\01a116ce-f9ab-7160-a4ec-62db9b73e854\\exec-b24b3348-3ce6-4211-90ba-c870acb09202.png",
+    "scene": "A calm spaniel on a grooming table, groomer gently checking the outer ear with a soft cotton pad, no instruments inserted in ear",
+    "tool": "built-in image_gen",
+    "composition": "Square frame, full dog and care activity, generous margins, quiet upper text area"
+  },
+  {
+    "name": "coat",
+    "file": "assets/images/grooming/services/coat.webp",
+    "original": "C:\\Users\\Dell\\.codex\\generated_images\\01a116ce-f9ab-7160-a4ec-62db9b73e854\\exec-ed5c99e4-31ee-4365-8d09-7f0dbdf0ef95.png",
+    "scene": "A calm long-haired dog standing on a grooming table while groomer gently brushes its coat with a grooming brush",
+    "tool": "built-in image_gen",
+    "composition": "Square frame, full dog and care activity, generous margins, quiet upper text area"
+  }
+]

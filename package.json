@@ -1,0 +1,20 @@
+{
+  "name": "morrow-and-paw",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Premium multipage pet shop HTML template",
+  "scripts": {
+    "build": "node scripts/build.cjs && node scripts/docs.cjs && node node_modules/prettier/bin/prettier.cjs --write index.html \"pages/**/*.html\" documentation/*.html",
+    "start": "node scripts/serve.cjs",
+    "test": "node tests/audit.cjs",
+    "format": "prettier --write index.html \"pages/**/*.html\" documentation/*.html assets/css/*.css assets/js/*.js scripts/*.cjs tests/*.cjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "prettier": "^3.9.9"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "bootstrap-icons": "^1.13.1"
+  }
+}

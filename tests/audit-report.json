@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-07T20:08:55.928Z",
+  "pages": 12,
+  "widths": [
+    320,
+    360,
+    375,
+    390,
+    414,
+    420,
+    480,
+    640,
+    768,
+    820,
+    1024,
+    1280,
+    1440,
+    1920
+  ],
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "rtlWidths": [
+    320,
+    820,
+    1440
+  ],
+  "layoutChecks": 408,
+  "contentImages": 64,
+  "repeatedImages": [],
+  "failures": [],
+  "consoleErrors": [],
+  "behaviorChecks": "Navigation, dropdown, Escape, theme persistence, RTL, cart panel, search, filters, sorting, gallery, tabs, quantity, enquiry prefill, validation, policy focus, countdown"
+}

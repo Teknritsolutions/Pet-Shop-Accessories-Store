@@ -1,0 +1,16 @@
+[
+  {
+    "name": "shop-hero",
+    "original": "C:\\Users\\Dell\\.codex\\generated_images\\01a116ce-f9ab-7160-a4ec-62db9b73e854\\exec-907e619f-9e2d-4b98-8566-0e2a8f17d7a5.png",
+    "file": "assets/images/heroes/shop-hero.webp",
+    "prompt": "Use case: photorealistic-natural. Create a premium editorial horizontal website background photograph for a pet accessories shop. A thoughtfully arranged everyday pet essentials collection in a warm cream and oak home: soft linen dog bed lower left, ceramic feeding bowls, woven toy basket, rope toy and leather leash at right, a relaxed small dog near the right edge. Natural daylight, realistic textures and anatomy, elegant understated styling, no readable labels or text, no logos. Wide composition with a quiet low-detail central area to support centered white HTML headline with a dark overlay. Photographic, no collage or UI.",
+    "tool": "built-in image_gen"
+  },
+  {
+    "name": "journal-hero",
+    "original": "C:\\Users\\Dell\\.codex\\generated_images\\01a116ce-f9ab-7160-a4ec-62db9b73e854\\exec-92095ac2-9c0f-4c52-ae4f-c876a44acf0a.png",
+    "file": "assets/images/heroes/journal-hero.webp",
+    "prompt": "Use case: photorealistic-natural. Create a premium editorial horizontal website background photograph for a practical pet care journal. A caring person sitting in a warm comfortable living room beside a relaxed dog, gently stroking its coat, with an open notebook and a ceramic water bowl nearby; natural calm everyday companionship, oak and cream furnishings, soft window light. Person and dog mainly at right, room and sofa continue through center to allow centered white HTML text with dark overlay. Realistic anatomy, candid editorial photography, subtle warm palette. No readable text, no logos, no collage, no UI.",
+    "tool": "built-in image_gen"
+  }
+]

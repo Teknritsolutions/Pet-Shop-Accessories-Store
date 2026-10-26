@@ -1,0 +1,6 @@
+node_modules/
+tests/screenshots/
+tests/artifacts/
+tests/*contact-sheet.jpg
+tests/*review*.jpg
+*.log

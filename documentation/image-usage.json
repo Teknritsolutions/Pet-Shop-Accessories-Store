@@ -1,0 +1,194 @@
+{
+  "assets/images/home/ivory-sofa-retriever.webp": [
+    "index.html"
+  ],
+  "assets/images/home/dog-companion.webp": [
+    "index.html"
+  ],
+  "assets/images/home/cat-at-home.webp": [
+    "index.html"
+  ],
+  "assets/images/home/companion-bird.webp": [
+    "index.html"
+  ],
+  "assets/images/home/aquarium-fish.webp": [
+    "index.html"
+  ],
+  "assets/images/home/rabbit-care.webp": [
+    "index.html"
+  ],
+  "assets/images/shop/linen-bed.webp": [
+    "index.html"
+  ],
+  "assets/images/shop/ceramic-bowl.webp": [
+    "index.html"
+  ],
+  "assets/images/shop/rope-toy.webp": [
+    "index.html"
+  ],
+  "assets/images/shop/leather-collar.webp": [
+    "index.html"
+  ],
+  "assets/images/home/our-companions.webp": [
+    "index.html"
+  ],
+  "assets/images/shop/cat-scratcher.webp": [
+    "index.html"
+  ],
+  "assets/images/shop/bird-feeder.webp": [
+    "index.html"
+  ],
+  "assets/images/home/salon-care.webp": [
+    "index.html"
+  ],
+  "assets/images/home/puppy-guide.webp": [
+    "index.html"
+  ],
+  "assets/images/home/cat-guide.webp": [
+    "index.html"
+  ],
+  "assets/images/home/walking-guide.webp": [
+    "index.html"
+  ],
+  "assets/images/ui/clara-milo.webp": [
+    "index.html"
+  ],
+  "assets/images/ui/sam-olive.webp": [
+    "index.html"
+  ],
+  "assets/images/ui/jamie-teddy.webp": [
+    "index.html"
+  ],
+  "assets/images/home/home-two-cat.webp": [
+    "pages/home-2.html"
+  ],
+  "assets/images/shop/fish-hide.webp": [
+    "pages/home-2.html"
+  ],
+  "assets/images/shop/rabbit-tunnel.webp": [
+    "pages/home-2.html"
+  ],
+  "assets/images/shop/food-pouch.webp": [
+    "pages/home-2.html"
+  ],
+  "assets/images/home/adventure-dog.webp": [
+    "pages/home-2.html"
+  ],
+  "assets/images/shop/cat-wand.webp": [
+    "pages/home-2.html"
+  ],
+  "assets/images/shop/travel-bowl.webp": [
+    "pages/home-2.html"
+  ],
+  "assets/images/home/calm-grooming.webp": [
+    "pages/home-2.html"
+  ],
+  "assets/images/home/fieldkind-outdoors.webp": [
+    "pages/home-2.html"
+  ],
+  "assets/images/home/wellness-dog.webp": [
+    "pages/home-2.html"
+  ],
+  "assets/images/home/community-dog.webp": [
+    "pages/home-2.html"
+  ],
+  "assets/images/home/community-cat.webp": [
+    "pages/home-2.html"
+  ],
+  "assets/images/heroes/shop-hero.webp": [
+    "pages/shop.html"
+  ],
+  "assets/images/shop/brush.webp": [
+    "pages/shop.html"
+  ],
+  "assets/images/shop/felt-ball.webp": [
+    "pages/shop.html"
+  ],
+  "assets/images/shop/harness.webp": [
+    "pages/shop.html"
+  ],
+  "assets/images/shop/seed-blend.webp": [
+    "pages/shop.html"
+  ],
+  "assets/images/shop/aquarium-tool.webp": [
+    "pages/shop.html"
+  ],
+  "assets/images/shop/hamster-house.webp": [
+    "pages/shop.html"
+  ],
+  "assets/images/shop/treat-jar.webp": [
+    "pages/shop.html"
+  ],
+  "assets/images/shop/cat-cave.webp": [
+    "pages/shop.html"
+  ],
+  "assets/images/shop/comfort-rest.webp": [
+    "pages/shop.html"
+  ],
+  "assets/images/shop/bed-detail.webp": [
+    "pages/product-details.html"
+  ],
+  "assets/images/shop/bed-overhead.webp": [
+    "pages/product-details.html"
+  ],
+  "assets/images/shop/cotton-lead.webp": [
+    "pages/product-details.html"
+  ],
+  "assets/images/shop/treat-pouch.webp": [
+    "pages/product-details.html"
+  ],
+  "assets/images/brands/brand-story.webp": [
+    "pages/brands.html"
+  ],
+  "assets/images/heroes/grooming-hero.webp": [
+    "pages/grooming.html"
+  ],
+  "assets/images/grooming/bath-and-brush.webp": [
+    "pages/grooming.html"
+  ],
+  "assets/images/heroes/journal-hero.webp": [
+    "pages/blog.html"
+  ],
+  "assets/images/blog/nutrition-guide.webp": [
+    "pages/blog.html"
+  ],
+  "assets/images/blog/indoor-cat.webp": [
+    "pages/blog.html"
+  ],
+  "assets/images/blog/positive-training.webp": [
+    "pages/blog.html"
+  ],
+  "assets/images/blog/small-pet-guide.webp": [
+    "pages/blog.html"
+  ],
+  "assets/images/blog/senior-companion.webp": [
+    "pages/blog.html"
+  ],
+  "assets/images/blog/coat-guide.webp": [
+    "pages/blog.html"
+  ],
+  "assets/images/blog/restful-companion.webp": [
+    "pages/blog.html"
+  ],
+  "assets/images/heroes/about-hero.webp": [
+    "pages/about.html"
+  ],
+  "assets/images/about/shop-origin.webp": [
+    "pages/about.html"
+  ],
+  "assets/images/about/team-store.webp": [
+    "pages/about.html"
+  ],
+  "assets/images/heroes/contact-hero.webp": [
+    "pages/contact.html"
+  ],
+  "assets/images/contact/boutique-store.webp": [
+    "pages/contact.html"
+  ],
+  "assets/images/blog/quiet-walk.webp": [
+    "pages/404.html"
+  ],
+  "assets/images/ui/coming-soon-puppy.webp": [
+    "pages/coming-soon.html"
+  ]
+}

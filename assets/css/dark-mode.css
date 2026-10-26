@@ -1,0 +1,40 @@
+/* Intentional dark surfaces; photographs retain their natural colors. */
+:root[data-theme="dark"] {
+  --color-primary: #d8b57b;
+  --color-secondary: #e9a18a;
+  --color-accent: #d8b57b;
+  --color-background: #14242e;
+  --color-surface: #1b2e39;
+  --color-soft: #20343f;
+  --color-text: #f3ede3;
+  --color-text-muted: #b9c4c6;
+  --color-border: #3b4e58;
+  --color-on-primary: #172d3c;
+  color-scheme: dark;
+}
+[data-theme="dark"] .btn-secondary {
+  color: #172d3c;
+}
+[data-theme="dark"] .newsletter {
+  background: #263b48;
+  color: #f3ede3;
+}
+[data-theme="dark"] .newsletter .form-message.success {
+  color: #f3ede3;
+}
+[data-theme="dark"] .announcement {
+  background: #0e1c25;
+  color: #f3ede3;
+}
+[data-theme="dark"] .badge-label {
+  color: #f3ede3;
+}
+[data-theme="dark"] .product-image {
+  background: #e8e0d3;
+}
+[data-theme="dark"] .brand-mark {
+  color: #d8b57b;
+}
+[data-theme="dark"] .btn-primary:hover {
+  color: #172d3c;
+}

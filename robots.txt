@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /pages/coming-soon.html
+Sitemap: https://example.com/sitemap.xml
