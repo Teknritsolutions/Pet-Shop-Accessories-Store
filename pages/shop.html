@@ -241,30 +241,70 @@
       <!-- Pet categories -->
       <section class="section">
         <div class="container">
-          <div class="pet-nav">
+          <div class="pet-nav pet-nav--photos">
             <a href="../pages/shop.html?pet=Dogs">
-              <i class="bi bi-heart" aria-hidden="true"></i>
-              Dogs
+              <img
+                src="../assets/images/categories/shop-dogs.webp"
+                alt="A tricolor beagle beside a cotton rope toy"
+                class="pet-nav-photo"
+                width="1100"
+                height="800"
+                loading="lazy"
+                decoding="async"
+              />
+              <span>Dogs</span>
               <i class="bi bi-arrow-right" aria-hidden="true"></i>
             </a>
             <a href="../pages/shop.html?pet=Cats">
-              <i class="bi bi-moon-stars" aria-hidden="true"></i>
-              Cats
+              <img
+                src="../assets/images/categories/shop-cats.webp"
+                alt="A ginger cat on a natural wooden perch"
+                class="pet-nav-photo"
+                width="1100"
+                height="800"
+                loading="lazy"
+                decoding="async"
+              />
+              <span>Cats</span>
               <i class="bi bi-arrow-right" aria-hidden="true"></i>
             </a>
             <a href="../pages/shop.html?pet=Birds">
-              <i class="bi bi-feather" aria-hidden="true"></i>
-              Birds
+              <img
+                src="../assets/images/categories/shop-birds.webp"
+                alt="A yellow cockatiel on a branch"
+                class="pet-nav-photo"
+                width="1100"
+                height="800"
+                loading="lazy"
+                decoding="async"
+              />
+              <span>Birds</span>
               <i class="bi bi-arrow-right" aria-hidden="true"></i>
             </a>
             <a href="../pages/shop.html?pet=Fish">
-              <i class="bi bi-water" aria-hidden="true"></i>
-              Fish
+              <img
+                src="../assets/images/categories/shop-fish.webp"
+                alt="A blue and red betta fish in a planted aquarium"
+                class="pet-nav-photo"
+                width="1100"
+                height="800"
+                loading="lazy"
+                decoding="async"
+              />
+              <span>Fish</span>
               <i class="bi bi-arrow-right" aria-hidden="true"></i>
             </a>
             <a href="../pages/shop.html?pet=Small%20Animals">
-              <i class="bi bi-flower1" aria-hidden="true"></i>
-              Small Animals
+              <img
+                src="../assets/images/categories/shop-small-animals.webp"
+                alt="A cream lop eared rabbit beside a willow ball"
+                class="pet-nav-photo"
+                width="1100"
+                height="800"
+                loading="lazy"
+                decoding="async"
+              />
+              <span>Small Animals</span>
               <i class="bi bi-arrow-right" aria-hidden="true"></i>
             </a>
           </div>
@@ -354,10 +394,207 @@
             </form>
           </div>
           <div class="catalog-status">
-            <span id="product-count" aria-live="polite">8 considered essentials</span>
+            <span id="product-count" aria-live="polite">12 considered essentials</span>
             <span>Demo catalog · USD</span>
           </div>
           <div class="grid grid-4">
+            <article
+              class="product-card"
+              data-product
+              data-name="everyday chicken dog food"
+              data-pet="Dogs"
+              data-type="Feeding"
+              data-price="32"
+              data-brand="Fieldkind"
+            >
+              <a
+                class="product-image"
+                href="../pages/contact.html?product=Everyday%20Chicken%20Dog%20Food#special-orders"
+              >
+                <img
+                  src="../assets/images/shop/dog-chicken-food.webp"
+                  alt="Sage dog food pouch with a bowl of dry kibble and a wooden scoop"
+                  class=""
+                  width="1100"
+                  height="800"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="badge-label">Thoughtfully chosen</span>
+              </a>
+              <div class="product-body">
+                <span class="eyebrow">Dogs · Feeding</span>
+                <h3>
+                  <a
+                    href="../pages/contact.html?product=Everyday%20Chicken%20Dog%20Food#special-orders"
+                  >
+                    Everyday Chicken Dog Food
+                  </a>
+                </h3>
+                <div class="product-bottom">
+                  <span class="price">$32.00</span>
+                  <button
+                    type="button"
+                    class="product-action"
+                    data-cart-key="dog-chicken-food"
+                    data-cart-name="Everyday Chicken Dog Food"
+                    data-cart-price="32"
+                    aria-pressed="false"
+                    aria-label="Add Everyday Chicken Dog Food to cart"
+                  >
+                    <span>Add</span>
+                    <i class="bi bi-plus" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article
+              class="product-card"
+              data-product
+              data-name="salmon supper cat food"
+              data-pet="Cats"
+              data-type="Feeding"
+              data-price="16"
+              data-brand="Mews Studio"
+            >
+              <a
+                class="product-image"
+                href="../pages/contact.html?product=Salmon%20Supper%20Cat%20Food#special-orders"
+              >
+                <img
+                  src="../assets/images/shop/cat-salmon-food.webp"
+                  alt="Terracotta cat food tins with salmon wet food in a ceramic dish"
+                  class=""
+                  width="1100"
+                  height="800"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+              <div class="product-body">
+                <span class="eyebrow">Cats · Feeding</span>
+                <h3>
+                  <a
+                    href="../pages/contact.html?product=Salmon%20Supper%20Cat%20Food#special-orders"
+                  >
+                    Salmon Supper Cat Food
+                  </a>
+                </h3>
+                <div class="product-bottom">
+                  <span class="price">$16.00</span>
+                  <button
+                    type="button"
+                    class="product-action"
+                    data-cart-key="cat-salmon-food"
+                    data-cart-name="Salmon Supper Cat Food"
+                    data-cart-price="16"
+                    aria-pressed="false"
+                    aria-label="Add Salmon Supper Cat Food to cart"
+                  >
+                    <span>Add</span>
+                    <i class="bi bi-plus" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article
+              class="product-card"
+              data-product
+              data-name="daily aquarium food pellets"
+              data-pet="Fish"
+              data-type="Feeding"
+              data-price="12"
+              data-brand="Tide & Timber"
+            >
+              <a
+                class="product-image"
+                href="../pages/contact.html?product=Daily%20Aquarium%20Food%20Pellets#special-orders"
+              >
+                <img
+                  src="../assets/images/shop/fish-food-pellets.webp"
+                  alt="Blue fish food container beside a glass dish of aquarium food pellets"
+                  class=""
+                  width="1100"
+                  height="800"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+              <div class="product-body">
+                <span class="eyebrow">Fish · Feeding</span>
+                <h3>
+                  <a
+                    href="../pages/contact.html?product=Daily%20Aquarium%20Food%20Pellets#special-orders"
+                  >
+                    Daily Aquarium Food Pellets
+                  </a>
+                </h3>
+                <div class="product-bottom">
+                  <span class="price">$12.00</span>
+                  <button
+                    type="button"
+                    class="product-action"
+                    data-cart-key="fish-food-pellets"
+                    data-cart-name="Daily Aquarium Food Pellets"
+                    data-cart-price="12"
+                    aria-pressed="false"
+                    aria-label="Add Daily Aquarium Food Pellets to cart"
+                  >
+                    <span>Add</span>
+                    <i class="bi bi-plus" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article
+              class="product-card"
+              data-product
+              data-name="meadow hay & rabbit pellets"
+              data-pet="Small Animals"
+              data-type="Feeding"
+              data-price="22"
+              data-brand="Little Habitat"
+            >
+              <a
+                class="product-image"
+                href="../pages/contact.html?product=Meadow%20Hay%20%26%20Rabbit%20Pellets#special-orders"
+              >
+                <img
+                  src="../assets/images/shop/rabbit-hay-food.webp"
+                  alt="Kraft bag of timothy hay beside a willow tray of rabbit food pellets"
+                  class=""
+                  width="1100"
+                  height="800"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+              <div class="product-body">
+                <span class="eyebrow">Small Animals · Feeding</span>
+                <h3>
+                  <a
+                    href="../pages/contact.html?product=Meadow%20Hay%20%26%20Rabbit%20Pellets#special-orders"
+                  >
+                    Meadow Hay & Rabbit Pellets
+                  </a>
+                </h3>
+                <div class="product-bottom">
+                  <span class="price">$22.00</span>
+                  <button
+                    type="button"
+                    class="product-action"
+                    data-cart-key="rabbit-hay-food"
+                    data-cart-name="Meadow Hay & Rabbit Pellets"
+                    data-cart-price="22"
+                    aria-pressed="false"
+                    aria-label="Add Meadow Hay & Rabbit Pellets to cart"
+                  >
+                    <span>Add</span>
+                    <i class="bi bi-plus" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
             <article
               class="product-card"
               data-product
@@ -380,7 +617,6 @@
                   loading="lazy"
                   decoding="async"
                 />
-                <span class="badge-label">Thoughtfully chosen</span>
               </a>
               <div class="product-body">
                 <span class="eyebrow">Dogs · Care</span>
@@ -811,17 +1047,44 @@
             </div>
           </div>
           <div class="grid grid-3">
-            <div class="info-card">
+            <div class="info-card value-photo-card">
+              <img
+                src="../assets/images/shop/care-quality.webp"
+                alt="Hands inspecting the stitching and hardware on a canvas dog lead"
+                class="value-photo"
+                width="1100"
+                height="800"
+                loading="lazy"
+                decoding="async"
+              />
               <i class="bi bi-box-seam" aria-hidden="true"></i>
               <h3>Considered quality</h3>
               <p>Products selected for usefulness, comfort, and everyday durability.</p>
             </div>
-            <div class="info-card">
+            <div class="info-card value-photo-card">
+              <img
+                src="../assets/images/shop/care-advice.webp"
+                alt="A pet shop assistant explaining food options to a customer with her dog"
+                class="value-photo"
+                width="1100"
+                height="800"
+                loading="lazy"
+                decoding="async"
+              />
               <i class="bi bi-chat-heart" aria-hidden="true"></i>
               <h3>Real, helpful advice</h3>
               <p>Ask a question. We’ll help you choose what suits your companion.</p>
             </div>
-            <div class="info-card">
+            <div class="info-card value-photo-card">
+              <img
+                src="../assets/images/shop/care-support.webp"
+                alt="A pet shop employee helping adjust a harness on a golden retriever"
+                class="value-photo"
+                width="1100"
+                height="800"
+                loading="lazy"
+                decoding="async"
+              />
               <i class="bi bi-arrow-repeat" aria-hidden="true"></i>
               <h3>Support beyond the purchase</h3>
               <p>Ask us about sizing, materials, and care to keep their essentials working well.</p>

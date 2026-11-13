@@ -2028,6 +2028,26 @@ html[dir="rtl"] .btn-text:hover .bi-arrow-right {
   font-size: var(--text-control);
   min-height: 48px;
 }
+.pet-nav.pet-nav--photos a {
+  flex: 1 1 140px;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+}
+.pet-nav--photos .pet-nav-photo {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.value-photo-card .value-photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1.6;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
 .pet-nav a > .bi:first-child {
   width: 36px;
   height: 36px;

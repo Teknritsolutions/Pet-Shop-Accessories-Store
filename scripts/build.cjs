@@ -14,6 +14,38 @@ const brands = [
 ];
 const pets = ["Dogs", "Cats", "Birds", "Fish", "Small Animals"];
 const products = {
+  "dog-chicken-food": [
+    "Everyday Chicken Dog Food",
+    "Dogs",
+    "Feeding",
+    32,
+    "Fieldkind",
+    "Sage dog food pouch with a bowl of dry kibble and a wooden scoop",
+  ],
+  "cat-salmon-food": [
+    "Salmon Supper Cat Food",
+    "Cats",
+    "Feeding",
+    16,
+    "Mews Studio",
+    "Terracotta cat food tins with salmon wet food in a ceramic dish",
+  ],
+  "fish-food-pellets": [
+    "Daily Aquarium Food Pellets",
+    "Fish",
+    "Feeding",
+    12,
+    "Tide & Timber",
+    "Blue fish food container beside a glass dish of aquarium food pellets",
+  ],
+  "rabbit-hay-food": [
+    "Meadow Hay & Rabbit Pellets",
+    "Small Animals",
+    "Feeding",
+    22,
+    "Little Habitat",
+    "Kraft bag of timothy hay beside a willow tray of rabbit food pellets",
+  ],
   "treat-pouch": [
     "Little Rewards Treat Pouch",
     "Dogs",
@@ -270,7 +302,6 @@ const pageHero = require("./page-heroes.cjs")({
   href,
   img,
   icon,
-  brandEmblem,
 });
 function productCard(key, badge = "", filter = false) {
   const [title, pet, type, price, brand, alt] = products[key];
@@ -282,8 +313,26 @@ function productCard(key, badge = "", filter = false) {
 }
 const productGrid = (keys, cls = "grid grid-4", filter = false) =>
   `<div class="${cls}">${keys.map((k, i) => productCard(k, i === 0 ? "Thoughtfully chosen" : "", filter)).join("")}</div>`;
-const petNav = () =>
-  `<div class="pet-nav">${pets.map((p, i) => `<a href="${href("shop")}?pet=${encodeURIComponent(p)}">${icon(["heart", "moon-stars", "feather", "water", "flower1"][i])}${p} ${arrow()}</a>`).join("")}</div>`;
+const petNav = (collection) => {
+  const photos = ["dogs", "cats", "birds", "fish", "small-animals"];
+  const descriptions = {
+    home: [
+      "A golden cocker spaniel in a warm living room",
+      "A silver tabby cat resting on a linen cushion",
+      "Blue and white budgerigars on a wooden perch",
+      "An orange and white goldfish in a planted aquarium",
+      "A brown and white guinea pig beside a wooden hide",
+    ],
+    shop: [
+      "A tricolor beagle beside a cotton rope toy",
+      "A ginger cat on a natural wooden perch",
+      "A yellow cockatiel on a branch",
+      "A blue and red betta fish in a planted aquarium",
+      "A cream lop eared rabbit beside a willow ball",
+    ],
+  };
+  return `<div class="pet-nav pet-nav--photos">${pets.map((pet, index) => `<a href="${href("shop")}?pet=${encodeURIComponent(pet)}">${img(`categories/${collection}-${photos[index]}`, descriptions[collection][index], "pet-nav-photo")}<span>${pet}</span>${arrow()}</a>`).join("")}</div>`;
+};
 const brandStrip = () =>
   `<div class="brand-strip">${brands.map((b) => `<a class="brand-wordmark" href="${href("brands")}">${brandEmblem(b)}</a>`).join("")}</div>`;
 const list = (items) =>
@@ -469,7 +518,15 @@ const reassurance = () =>
       "Ask us about sizing, materials, and care to keep their essentials working well.",
     ],
   ]
-    .map(([i, t, d]) => `<div class="info-card">${icon(i)}<h3>${t}</h3><p>${d}</p></div>`)
+    .map(([i, t, d], index) => {
+      const photos = ["care-quality", "care-advice", "care-support"];
+      const descriptions = [
+        "Hands inspecting the stitching and hardware on a canvas dog lead",
+        "A pet shop assistant explaining food options to a customer with her dog",
+        "A pet shop employee helping adjust a harness on a golden retriever",
+      ];
+      return `<div class="info-card value-photo-card">${img(`shop/${photos[index]}`, descriptions[index], "value-photo")}${icon(i)}<h3>${t}</h3><p>${d}</p></div>`;
+    })
     .join("")}</div>`;
 const faq = (items) =>
   `<div class="faq">${items.map(([q, a]) => `<details><summary>${q}</summary><p>${a}</p></details>`).join("")}</div>`;
@@ -759,7 +816,7 @@ add(
   "home-2",
   () =>
     `<section class="hero hero-2"><div class="container hero-grid"><div class="hero-image">${img("home/home-two-cat", "A curious cat in a peaceful warm home", "", true)}<div class="image-note">${icon("sun")}<span>A home, a companion, a little joy.</span></div></div><div class="hero-copy"><span class="eyebrow">The art of a good everyday</span><h1>Little rituals.<br><em>Big love.</em></h1><p class="lead">The morning stretch. The favorite toy. The long way home. Discover essentials made for the moments you share.</p><div class="button-row">${button("Find their favorites", "shop")}${textLink("Our point of view", "about")}</div><div class="hero-trust">${icon("flower1")}<span>Considered things for companion-filled lives.</span></div></div></div></section>` +
-    section("Quick pet navigation", petNav(), "section-soft") +
+    section("Quick pet navigation", petNav("home"), "section-soft") +
     section(
       "Editors picks",
       heading(
@@ -866,10 +923,10 @@ add(
       "Good things for their everyday.",
       "Comfort, play, mealtimes, and little adventures. Find thoughtfully chosen essentials for every kind of companion.",
     ) +
-    section("Pet categories", petNav()) +
+    section("Pet categories", petNav("shop")) +
     section(
       "Product filters and catalog",
-      `<div class="catalog-finder"><div class="finder-heading"><span class="finder-icon">${icon("sliders2")}</span><div><span class="eyebrow">Their everyday, made easier</span><h2>Find the right essentials.</h2><p>Choose your companion, narrow the collection, and find something that fits their routine.</p></div></div><form class="filter-toolbar" id="product-filters" autocomplete="off"><div class="field"><label for="shop-search">Search</label><input id="shop-search" name="q" type="search" placeholder="Search beds, toys, bowls…" autocomplete="off"></div><div class="field"><label for="pet-filter">Pet</label><select id="pet-filter" name="pet"><option value="">All pets</option>${pets.map((p) => `<option>${p}</option>`).join("")}</select></div><div class="field"><label for="type-filter">Type</label><select id="type-filter" name="type"><option value="">All types</option>${["Comfort", "Play", "Feeding", "Walking", "Care"].map((p) => `<option>${p}</option>`).join("")}</select></div><div class="field"><label for="brand-filter">Brand</label><select id="brand-filter" name="brand"><option value="">All brands</option>${brands.map((p) => `<option>${p}</option>`).join("")}</select></div><div class="field"><label for="price-filter">Budget</label><select id="price-filter" name="price"><option value="">Any price</option><option value="25">Under $25</option><option value="50">Under $50</option></select></div><div class="field"><label for="sort-filter">Sort</label><select id="sort-filter" name="sort"><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option><option value="name">Name: A–Z</option></select></div><button class="btn btn-outline" type="reset">${icon("arrow-counterclockwise")}Reset filters</button></form></div><div class="catalog-status"><span id="product-count" aria-live="polite">8 considered essentials</span><span>Demo catalog · USD</span></div>${productGrid(["brush", "felt-ball", "harness", "seed-blend", "aquarium-tool", "hamster-house", "treat-jar", "cat-cave"], "grid grid-4", true)}<p id="product-empty" class="empty-state" hidden>No matching essentials yet. Try another pet or clear your filters.</p>`,
+      `<div class="catalog-finder"><div class="finder-heading"><span class="finder-icon">${icon("sliders2")}</span><div><span class="eyebrow">Their everyday, made easier</span><h2>Find the right essentials.</h2><p>Choose your companion, narrow the collection, and find something that fits their routine.</p></div></div><form class="filter-toolbar" id="product-filters" autocomplete="off"><div class="field"><label for="shop-search">Search</label><input id="shop-search" name="q" type="search" placeholder="Search beds, toys, bowls…" autocomplete="off"></div><div class="field"><label for="pet-filter">Pet</label><select id="pet-filter" name="pet"><option value="">All pets</option>${pets.map((p) => `<option>${p}</option>`).join("")}</select></div><div class="field"><label for="type-filter">Type</label><select id="type-filter" name="type"><option value="">All types</option>${["Comfort", "Play", "Feeding", "Walking", "Care"].map((p) => `<option>${p}</option>`).join("")}</select></div><div class="field"><label for="brand-filter">Brand</label><select id="brand-filter" name="brand"><option value="">All brands</option>${brands.map((p) => `<option>${p}</option>`).join("")}</select></div><div class="field"><label for="price-filter">Budget</label><select id="price-filter" name="price"><option value="">Any price</option><option value="25">Under $25</option><option value="50">Under $50</option></select></div><div class="field"><label for="sort-filter">Sort</label><select id="sort-filter" name="sort"><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option><option value="name">Name: A–Z</option></select></div><button class="btn btn-outline" type="reset">${icon("arrow-counterclockwise")}Reset filters</button></form></div><div class="catalog-status"><span id="product-count" aria-live="polite">12 considered essentials</span><span>Demo catalog · USD</span></div>${productGrid(["dog-chicken-food", "cat-salmon-food", "fish-food-pellets", "rabbit-hay-food", "brush", "felt-ball", "harness", "seed-blend", "aquarium-tool", "hamster-house", "treat-jar", "cat-cave"], "grid grid-4", true)}<p id="product-empty" class="empty-state" hidden>No matching essentials yet. Try another pet or clear your filters.</p>`,
       "",
       "catalog",
     ) +
@@ -1139,7 +1196,15 @@ add(
             "Friendly guidance, without the pressure or the complicated language.",
           ],
         ]
-          .map(([i, t, d]) => `<div class="info-card">${icon(i)}<h3>${t}</h3><p>${d}</p></div>`)
+          .map(([i, t, d], index) => {
+            const photos = ["about/value-companions", "about/value-chosen", "about/value-advice"];
+            const descriptions = [
+              "A woman gently caring for her relaxed terrier at home",
+              "Hands inspecting a cotton dog harness beside a ceramic bowl",
+              "A pet shop employee advising a customer with their dog",
+            ];
+            return `<div class="info-card value-photo-card">${img(photos[index], descriptions[index], "value-photo")}${icon(i)}<h3>${t}</h3><p>${d}</p></div>`;
+          })
           .join("")}</div>`,
       "section-soft",
     ) +
